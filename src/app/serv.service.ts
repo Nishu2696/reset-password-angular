@@ -15,18 +15,18 @@ export class ServService {
   ) { }
 
   register(reg_details): Observable<any>{
-    return this.http.post(`${this.heroku}register`, reg_details)
+    return this.http.post(this.heroku + "register", reg_details)
   }
 
   login(log_details): Observable<any>{
-    return this.http.post(`${this.heroku}login`, log_details)
+    return this.http.post(this.heroku + "login", log_details)
   }
 
   reset(reset_details): Observable<any>{
-    return this.http.post(`${this.heroku}changepassword`, reset_details)
+    return this.http.post(this.heroku+ "changepassword", reset_details)
   }
 
   change(change_details): Observable<any>{
-    return this.http.post(`${this.heroku}interchangepassword`, change_details)
+    return this.http.post(this.heroku+ "interchangepassword", change_details)
   }
 }
