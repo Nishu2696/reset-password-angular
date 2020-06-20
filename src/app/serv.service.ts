@@ -8,7 +8,7 @@ import { Observable, of } from 'rxjs';
 })
 export class ServService {
 
-  heroku = "https://dem-app-reset.herokuapp.com/";
+  heroku = "https://demo-app-reset.herokuapp.com/";
 
   constructor(
     private http: HttpClient
